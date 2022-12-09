@@ -1,0 +1,98 @@
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+.synce {
+    padding: 100px 0;
+    background: url(../img/section2_bg.jpg) repeat-x;
+}
+
+.synce_wrap {
+    display: flex;
+    gap: 60px;
+    /* overflow: hidden; */
+    /* background: #ff0; */
+    margin: 0 0 0 auto;
+    width: calc(1200px + (100% - 1200px) / 2);
+}
+
+.synce_wrap .left {
+    width: 400px;
+    /* background: #f00; */    
+}
+
+/* .synce_wrap .left_slide img {
+    box-shadow: 10px 10px 50px #333;
+} */
+
+.synce_wrap .right {
+    flex: 1;
+    overflow: hidden;
+    /* background: #369; */
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 999;
+}
+
+.left_slide .slick-list {
+    overflow: visible;
+}
+
+.left_slide img {
+    box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.3);
+    margin: 0 0 40px 0;
+}
+
+.right_slide {
+    margin: auto 0 0 -15px;
+}
+
+.right_slide figure {
+    padding: 0 15px;
+}
+
+.right h2 {
+    font-size: 30px;
+    color: #fff;
+    margin: 0 0 15px 0;
+}
+
+.right p {
+    font-size: 15px;
+    color: #fff;
+    margin: 0 0 15px 0;
+}
+
+.bar {
+    position: relative;
+    width: 740px;
+    height: 10px;
+    background: #fff;
+    margin: 10px 0;
+}
+
+.bar span {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 50px;
+    height: 100%;
+    background: tomato;
+    transition: left .5s;
+}
+
+.bar2 {
+    position: relative;
+    width: 740px;
+    height: 10px;
+    background: #fff;
+}
+
+.bar2 span {
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    background: tomato;
+    transition: width .5s;
+}

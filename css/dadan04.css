@@ -1,0 +1,78 @@
+/* 기본세팅 */
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#maindVisual {
+    position: relative;
+    height: 100vh;
+    
+    background: #333;
+}
+
+#header {
+    line-height: 100px;
+    position: relative;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;    
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 60px;
+}
+
+#header .gnb a {
+    display: block;
+}
+
+#header .gnb>ul>li {
+    position: relative;
+}
+
+#header .gnb>ul>li .smenu {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    line-height: 40px;
+    background: tomato;
+    color: #fff;
+    text-align: center;
+    width: 150px;
+    z-index: 999;
+    
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#header .gnb>ul:hover>li .smenu {
+    height: 170px;
+}
+
+#header .gnb>ul>li .smenu li~li {
+    border-top: 1px solid #fff;
+}
+
+#header .gnb>ul::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;    
+    background: tomato;
+    z-index: 999;
+
+    height: 0;
+    transition: 0.5s;
+}
+
+#header .gnb>ul:hover::before {
+    height: 170px;
+}

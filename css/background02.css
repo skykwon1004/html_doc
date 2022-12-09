@@ -1,0 +1,49 @@
+.sec {
+    height: 50vh;
+    margin: 100px;
+    padding: 100px;
+}
+
+.lg01 {
+    background: linear-gradient(red, blue);
+}
+
+.lg02 {
+    background: linear-gradient(to right, red, blue);
+}
+
+.lg03 {
+    background: linear-gradient(to right, red 50%, blue 40%);
+    /* 앞에 %가 더 크면 선을 그어서 딱 잘라놓음 */
+}
+
+.lg04 {
+    position: relative;
+    background: url(../img/mainvisual01.jpg);
+}
+
+.lg04::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(transparent 20%, #333 )
+}
+
+.lg05 {
+    position: relative;
+    background: url(../img/mainvisual01.jpg);
+}
+
+.lg05::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: url(../img/pt03.png);
+    opacity: 0.1;
+}

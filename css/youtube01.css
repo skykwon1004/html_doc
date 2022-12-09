@@ -1,0 +1,30 @@
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+.header {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+}
+
+.footer {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+}
+
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .video_wrap {
+    height: 90vh;
+}
+
+.youtube iframe {
+    width: 400px;
+    height: 300px
+}

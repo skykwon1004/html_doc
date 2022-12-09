@@ -1,0 +1,37 @@
+.main_event {
+    padding: 100px 0;
+}
+
+.main_event h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-align: center
+}
+
+.main_event p {
+    font-size: 15px;
+    margin: 0 0 30px 0;
+    text-align: center;    
+}
+
+.main_event .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_event .inner figure {
+    flex: 1;
+
+}
+
+.main_event .inner .box {
+    margin: 0 0 30px 0;
+}
+
+.main_event .inner .desc {
+    font-size: 15px;
+    text-align: center;
+}
